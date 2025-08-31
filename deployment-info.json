@@ -1,0 +1,11 @@
+{
+  "network": "avalanche-fuji",
+  "chainId": 43113,
+  "timestamp": "2025-08-29T14:21:06.159Z",
+  "deployer": "0xd7b4D114632947fB58496FFDfeD852429a475bEf",
+  "contracts": {
+    "NazdeekiCore": "0xbee4C92Ab527E28251d3F9a943d3a12AA1ffbEA7",
+    "FoodToken": "0x4931962b6d0250E9E5c060E0c5cF7e53a3D673AF",
+    "NazdeekiPaymaster": "0x988375d69f12260b867756C922b2208E8c1706f4"
+  }
+}
