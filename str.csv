@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "table_schema","table_name","ordinal_position","column_name","data_type","is_nullable","is_primary_key","foreign_key_references_table","foreign_key_references_column"
 "public","addresses",1,"address_id","integer","NO","YES",NULL,NULL
 "public","addresses",2,"user_id","integer","YES","NO",NULL,NULL
@@ -178,3 +179,185 @@
 "public","users",5,"gender","character varying","YES","NO",NULL,NULL
 "public","users",6,"dob","date","YES","NO",NULL,NULL
 "public","users",7,"preference","character varying","YES","NO",NULL,NULL
+=======
+"table_schema","table_name","ordinal_position","column_name","data_type","is_nullable","is_primary_key","foreign_key_references_table","foreign_key_references_column"
+"public","addresses",1,"address_id","integer","NO","YES",NULL,NULL
+"public","addresses",2,"user_id","integer","YES","NO",NULL,NULL
+"public","addresses",3,"rest_id","character varying","YES","NO",NULL,NULL
+"public","addresses",4,"address_type","character varying","YES","NO",NULL,NULL
+"public","addresses",5,"country","character varying","YES","NO",NULL,NULL
+"public","addresses",6,"state","character varying","YES","NO",NULL,NULL
+"public","addresses",7,"city","character varying","YES","NO",NULL,NULL
+"public","addresses",9,"house_ad","character varying","YES","NO",NULL,NULL
+"public","addresses",10,"colony_name","character varying","YES","NO",NULL,NULL
+"public","addresses",11,"landmark","character varying","YES","NO",NULL,NULL
+"public","addresses",12,"rest_ad","character varying","YES","NO",NULL,NULL
+"public","addresses",13,"latitude","numeric","YES","NO",NULL,NULL
+"public","addresses",14,"longitude","numeric","YES","NO",NULL,NULL
+"public","addresses",15,"pincode","character varying","YES","NO",NULL,NULL
+"public","admin",1,"admin","character varying","NO","YES",NULL,NULL
+"public","admin",2,"pass","character varying","YES","NO",NULL,NULL
+"public","auth_logs",1,"id","integer","NO","YES",NULL,NULL
+"public","auth_logs",2,"seller_id","character varying","YES","NO","sellers","seller_id"
+"public","auth_logs",3,"phone_number","character varying","YES","NO",NULL,NULL
+"public","auth_logs",4,"event_type","character varying","NO","NO",NULL,NULL
+"public","auth_logs",5,"ip_address","inet","YES","NO",NULL,NULL
+"public","auth_logs",6,"user_agent","text","YES","NO",NULL,NULL
+"public","auth_logs",7,"success","boolean","YES","NO",NULL,NULL
+"public","auth_logs",8,"error_message","text","YES","NO",NULL,NULL
+"public","auth_logs",9,"created_at","timestamp without time zone","YES","NO",NULL,NULL
+"public","auth_sessions",1,"session_id","uuid","NO","YES",NULL,NULL
+"public","auth_sessions",2,"seller_id","character varying","YES","NO","sellers","seller_id"
+"public","auth_sessions",3,"refresh_token_hash","character varying","NO","NO",NULL,NULL
+"public","auth_sessions",4,"device_info","text","YES","NO",NULL,NULL
+"public","auth_sessions",5,"ip_address","inet","YES","NO",NULL,NULL
+"public","auth_sessions",6,"created_at","timestamp without time zone","YES","NO",NULL,NULL
+"public","auth_sessions",7,"expires_at","timestamp without time zone","NO","NO",NULL,NULL
+"public","auth_sessions",8,"is_active","boolean","YES","NO",NULL,NULL
+"public","auth_sessions",9,"last_used","timestamp without time zone","YES","NO",NULL,NULL
+"public","collection",1,"user_id","integer","YES","NO",NULL,NULL
+"public","collection",2,"rest_id","character varying","YES","NO",NULL,NULL
+"public","collection",3,"item_id","integer","YES","NO",NULL,NULL
+"public","likes",1,"user_id","integer","YES","NO",NULL,NULL
+"public","likes",2,"rest_id","character varying","YES","NO",NULL,NULL
+"public","menu",1,"rest_id","character varying","YES","NO","sellers","seller_id"
+"public","menu",2,"item_id","integer","NO","YES",NULL,NULL
+"public","menu",3,"item_name","character varying","YES","NO",NULL,NULL
+"public","menu",4,"item_price","integer","YES","NO",NULL,NULL
+"public","menu",5,"item_desc","text","YES","NO",NULL,NULL
+"public","menu",6,"item_type","character varying","YES","NO",NULL,NULL
+"public","menu",7,"service_type","character varying","YES","NO",NULL,NULL
+"public","menu",8,"image","text","YES","NO",NULL,NULL
+"public","menu",9,"packaging_price","integer","YES","NO",NULL,NULL
+"public","menu",10,"discount","integer","YES","NO",NULL,NULL
+"public","menu",11,"item_qty","character varying","YES","NO",NULL,NULL
+"public","menu",12,"item_cat","character varying","YES","NO",NULL,NULL
+"public","menu",13,"cat_timing","timestamp without time zone","YES","NO",NULL,NULL
+"public","offers",1,"offer_id","integer","NO","YES",NULL,NULL
+"public","offers",2,"seller_id","character varying","NO","NO","sellers","seller_id"
+"public","offers",3,"offer_title","character varying","YES","NO",NULL,NULL
+"public","offers",4,"offer_description","text","YES","NO",NULL,NULL
+"public","offers",5,"offer_image","character varying","YES","NO",NULL,NULL
+"public","offers",6,"offer_image_public_id","character varying","YES","NO",NULL,NULL
+"public","offers",7,"discount_type","character varying","YES","NO",NULL,NULL
+"public","offers",8,"discount_value","integer","YES","NO",NULL,NULL
+"public","offers",9,"min_order_amount","integer","YES","NO",NULL,NULL
+"public","offers",10,"max_discount_amount","integer","YES","NO",NULL,NULL
+"public","offers",11,"valid_from","timestamp without time zone","YES","NO",NULL,NULL
+"public","offers",12,"valid_until","timestamp without time zone","YES","NO",NULL,NULL
+"public","offers",13,"is_active","boolean","YES","NO",NULL,NULL
+"public","offers",14,"usage_limit","integer","YES","NO",NULL,NULL
+"public","offers",15,"used_count","integer","YES","NO",NULL,NULL
+"public","offers",16,"created_at","timestamp without time zone","YES","NO",NULL,NULL
+"public","offers",17,"updated_at","timestamp without time zone","YES","NO",NULL,NULL
+"public","order_list",1,"order_id","character varying","NO","YES",NULL,NULL
+"public","order_list",2,"user_id","integer","YES","NO",NULL,NULL
+"public","order_list",3,"rest_id","character varying","YES","NO",NULL,NULL
+"public","order_list",4,"service_type","character varying","YES","NO",NULL,NULL
+"public","order_list",5,"cust_name","character varying","YES","NO",NULL,NULL
+"public","order_list",6,"order_time","timestamp without time zone","YES","NO",NULL,NULL
+"public","order_list",7,"status","character varying","YES","NO",NULL,NULL
+"public","order_list",8,"item_name","character varying","YES","NO",NULL,NULL
+"public","order_list",9,"item_quantity","integer","YES","NO",NULL,NULL
+"public","order_list",10,"item_amount","integer","YES","NO",NULL,NULL
+"public","order_list",11,"item_total","integer","YES","NO",NULL,NULL
+"public","order_list",12,"applied_coupon","integer","YES","NO",NULL,NULL
+"public","order_list",13,"cgst","integer","YES","NO",NULL,NULL
+"public","order_list",14,"sgst","integer","YES","NO",NULL,NULL
+"public","order_list",15,"grand_total","double precision","YES","NO",NULL,NULL
+"public","orders",1,"order_id","character varying","YES","NO",NULL,NULL
+"public","orders",2,"user_id","integer","YES","NO",NULL,NULL
+"public","orders",3,"service_type","character varying","YES","NO",NULL,NULL
+"public","orders",4,"table_number","character varying","YES","NO",NULL,NULL
+"public","orders",5,"location","character varying","YES","NO",NULL,NULL
+"public","orders",6,"cust_name","character varying","YES","NO",NULL,NULL
+"public","orders",7,"order_time","timestamp without time zone","YES","NO",NULL,NULL
+"public","orders",8,"status","character varying","YES","NO",NULL,NULL
+"public","orders",9,"rest_id","character varying","YES","NO",NULL,NULL
+"public","orders",10,"payment_method","character varying","YES","NO",NULL,NULL
+"public","orders",11,"transaction_id","bigint","YES","NO",NULL,NULL
+"public","orders",12,"preparation_time","character varying","YES","NO",NULL,NULL
+"public","otp_attempts",1,"id","integer","NO","YES",NULL,NULL
+"public","otp_attempts",2,"phone_number","character varying","NO","NO",NULL,NULL
+"public","otp_attempts",3,"otp_hash","character varying","NO","NO",NULL,NULL
+"public","otp_attempts",4,"attempts","integer","YES","NO",NULL,NULL
+"public","otp_attempts",5,"created_at","timestamp without time zone","YES","NO",NULL,NULL
+"public","otp_attempts",6,"expires_at","timestamp without time zone","NO","NO",NULL,NULL
+"public","otp_attempts",7,"verified_at","timestamp without time zone","YES","NO",NULL,NULL
+"public","otp_attempts",8,"ip_address","inet","YES","NO",NULL,NULL
+"public","otp_attempts",9,"is_signup","boolean","YES","NO",NULL,NULL
+"public","otp_attempts",10,"session_id","character varying","YES","NO",NULL,NULL
+"public","otp_attempts",11,"sms_provider","character varying","YES","NO",NULL,NULL
+"public","otp_attempts",12,"sms_status","character varying","YES","NO",NULL,NULL
+"public","rating",1,"user_id","integer","YES","NO",NULL,NULL
+"public","rating",2,"rest_id","character varying","YES","NO",NULL,NULL
+"public","rating",3,"ratings","integer","YES","NO",NULL,NULL
+"public","rating",4,"comment","text","YES","NO",NULL,NULL
+"public","seller_services",1,"seller_id","character varying","NO","YES","sellers","seller_id"
+"public","seller_services",2,"service","character varying","NO","YES",NULL,NULL
+"public","sellers",1,"seller_id","character varying","NO","YES",NULL,NULL
+"public","sellers",2,"owner_name","character varying","YES","NO",NULL,NULL
+"public","sellers",3,"restaurant_name","character varying","YES","NO",NULL,NULL
+"public","sellers",4,"address_id","integer","YES","NO","addresses","address_id"
+"public","sellers",5,"restaurant_image","text","YES","NO",NULL,NULL
+"public","sellers",6,"menu_id","integer","YES","NO",NULL,NULL
+"public","sellers",7,"aadhaar_no","character varying","YES","NO",NULL,NULL
+"public","sellers",8,"fssai_license","character varying","YES","NO",NULL,NULL
+"public","sellers",9,"pan_no","character varying","YES","NO",NULL,NULL
+"public","sellers",10,"gst_no","character varying","YES","NO",NULL,NULL
+"public","sellers",11,"bank_acc_no","character varying","YES","NO",NULL,NULL
+"public","sellers",12,"ifsc_code","character varying","YES","NO",NULL,NULL
+"public","sellers",13,"service_type","ARRAY","YES","NO",NULL,NULL
+"public","sellers",14,"account_holder_name","character varying","YES","NO",NULL,NULL
+"public","sellers",15,"bank_name","character varying","YES","NO",NULL,NULL
+"public","sellers",17,"email","character varying","YES","NO",NULL,NULL
+"public","sellers",18,"special_offers","text","YES","NO",NULL,NULL
+"public","sellers",19,"rest_phone","character varying","YES","NO","sellers","rest_phone"
+"public","sellers",20,"phone_verified","boolean","YES","NO",NULL,NULL
+"public","sellers",21,"account_status","character varying","YES","NO",NULL,NULL
+"public","sellers",22,"created_at","timestamp without time zone","YES","NO",NULL,NULL
+"public","sellers",23,"updated_at","timestamp without time zone","YES","NO",NULL,NULL
+"public","sellers",24,"last_login","timestamp without time zone","YES","NO",NULL,NULL
+"public","sellers",25,"login_attempts","integer","YES","NO",NULL,NULL
+"public","sellers",26,"locked_until","timestamp without time zone","YES","NO",NULL,NULL
+"public","sellers",29,"opening_time","time without time zone","YES","NO",NULL,NULL
+"public","sellers",30,"closing_time","time without time zone","YES","NO",NULL,NULL
+"public","sellers",31,"service_types","ARRAY","YES","NO",NULL,NULL
+"public","sellers",32,"operating_hours","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",1,"seller_id","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",2,"owner_name","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",3,"restaurant_name","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",4,"address_id","integer","YES","NO",NULL,NULL
+"public","sellers_backup",5,"restaurant_image","text","YES","NO",NULL,NULL
+"public","sellers_backup",6,"menu_id","integer","YES","NO",NULL,NULL
+"public","sellers_backup",7,"aadhaar_no","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",8,"fssai_license","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",9,"pan_no","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",10,"gst_no","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",11,"bank_acc_no","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",12,"ifsc_code","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",13,"service_type","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",14,"account_holder_name","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",15,"bank_name","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",16,"operating_hours","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",17,"email","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",18,"special_offers","text","YES","NO",NULL,NULL
+"public","sellers_backup",19,"rest_phone","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",20,"phone_verified","boolean","YES","NO",NULL,NULL
+"public","sellers_backup",21,"account_status","character varying","YES","NO",NULL,NULL
+"public","sellers_backup",22,"created_at","timestamp without time zone","YES","NO",NULL,NULL
+"public","sellers_backup",23,"updated_at","timestamp without time zone","YES","NO",NULL,NULL
+"public","sellers_backup",24,"last_login","timestamp without time zone","YES","NO",NULL,NULL
+"public","sellers_backup",25,"login_attempts","integer","YES","NO",NULL,NULL
+"public","sellers_backup",26,"locked_until","timestamp without time zone","YES","NO",NULL,NULL
+"public","sellers_backup",27,"opening_time","time without time zone","YES","NO",NULL,NULL
+"public","sellers_backup",28,"closing_time","time without time zone","YES","NO",NULL,NULL
+"public","sellers_backup",29,"service_types","ARRAY","YES","NO",NULL,NULL
+"public","users",1,"user_id","integer","NO","YES",NULL,NULL
+"public","users",2,"name","character varying","YES","NO",NULL,NULL
+"public","users",3,"email","character varying","YES","NO",NULL,NULL
+"public","users",4,"phone","character varying","YES","NO",NULL,NULL
+"public","users",5,"gender","character varying","YES","NO",NULL,NULL
+"public","users",6,"dob","date","YES","NO",NULL,NULL
+"public","users",7,"preference","character varying","YES","NO",NULL,NULL
+>>>>>>> f1eda0619784984f1d22a28100df7f046ae9aec9
